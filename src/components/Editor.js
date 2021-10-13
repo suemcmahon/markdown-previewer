@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Editor = ({ markdown }) => {
+const Editor = ({ markdown, editMarkdown }) => {
   return (
     <textarea
       id="editor"
@@ -8,13 +8,15 @@ const Editor = ({ markdown }) => {
       name="editor"
       rows="5"
       cols="33"
-      defaultValue={markdown}
+      onChange={editMarkdown}
+      value={markdown}
     ></textarea>
   );
 };
 
 Editor.propTypes = {
   markdown: PropTypes.string,
+  editMarkdown: PropTypes.func,
 };
 
 export default Editor;

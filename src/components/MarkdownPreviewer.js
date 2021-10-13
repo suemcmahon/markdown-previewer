@@ -3,9 +3,9 @@ import Editor from "./Editor";
 import Preview from "./Preview";
 
 const MarkdownPreviewer = () => {
-  const placeholder = "#heading";
+  const defaultText = "# heading";
 
-  const [content, setContent] = useState(placeholder);
+  const [content, setContent] = useState(defaultText);
 
   return (
     <div className="markdown-previewer">

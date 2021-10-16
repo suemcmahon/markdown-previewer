@@ -3,7 +3,11 @@ import createMarkUp from "../utils/createMarkUp";
 
 const Preview = ({ markdown }) => {
   return (
-    <div id="preview" dangerouslySetInnerHTML={createMarkUp(markdown)}></div>
+    <div
+      id="preview"
+      className="col-6 p-5 preview"
+      dangerouslySetInnerHTML={createMarkUp(markdown)}
+    ></div>
   );
 };
 

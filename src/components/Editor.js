@@ -4,10 +4,8 @@ const Editor = ({ markdown, editMarkdown }) => {
   return (
     <textarea
       id="editor"
-      className="editor"
+      className="editor col-6 p-5 border-0 shadow-lg"
       name="editor"
-      rows="5"
-      cols="33"
       onChange={editMarkdown}
       value={markdown}
     ></textarea>

@@ -51,7 +51,7 @@ const MarkdownPreviewer = () => {
   const [content, setContent] = useState(defaultText);
 
   return (
-    <div className="markdown-previewer">
+    <div className="markdown-previewer row justify-content-center m-5">
       <Editor
         markdown={content}
         editMarkdown={(e) => setContent(e.target.value)}
